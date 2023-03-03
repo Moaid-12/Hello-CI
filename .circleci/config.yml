@@ -28,11 +28,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say world"
+          name: "Say world and Moaid"
           command: "echo world"
       - run:
           name: "Say My Name"
-          command: "echo /n${MY_NAME}"
+          command: "echo ${MY_NAME}"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
